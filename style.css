@@ -1,27 +1,123 @@
+body{
+    display:flex;
+    flex-direction:column;
+}
+
 .picture{
-    height:100vh;
-    width:auto;
-    margin:0;
-    padding:0;
-    border:none;
-    outline:none;
+    background-image:url(./lexi-laginess-TTUvyE7MwkM-unsplash.jpg);
     
+   width:100vw;
+   height:15vh;
+   
+   background-size:100vw;
+   background-position-y:30%;
+   position:relative;
+}
+
+.logo-background{
+    position:absolute;
+    width:100vw;
+    height:13vh;
+    background-color:black;
+    opacity:80%;
+    top:1vh;
+    bottom:1vh;
+    display:flex;
+    justify-content: center;
+    
+    align-items: center;
+
+}
+
+.text{
+    align-items: center;
+    vertical-align: center;
+    color:white;
+    font-weight:800;
+    font-size:70px;
+    
+    font-family:OCR A Std, monospace;
+
+    
+}
+
+.logo{
+    min-width:100px;
+    height:11vh;
 }
 
 html,
 body{
-   width: 100%;
-   height: 100%;
-   overflow: hidden;
-   margin: 0;
-}
+     width: 100%;
+     height: 100%;
+     overflow: hidden;
+     margin: 0;
     
+}
+
+.content-side{
+    border:1px solid red;
+}
 
 
-.cover{
-    display:flex;
-    margin:0;
-    padding:0;
-    height:100vh;
-    border:none;
+
+
+
+
+
+
+@media only screen and (min-width:600px){
+    .picture{
+       
+        background-size:cover;
+        background-image:url(./lexi-laginess-TTUvyE7MwkM-unsplash.jpg);
+        background-position:center;
+        height:100vh;
+        width:40vw;
+        position:relative;
+    }
+
+    .logo-background{
+        position:absolute;
+        width:40vw;
+        height:13vh;
+        background-color:black;
+        opacity:70%;
+        top:20vh;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        
+    
+    }
+    .text{
+        align-items: center;
+        vertical-align: center;
+        color:white;
+        font:bold;
+        font-size:35px;
+        font-size:60px;
+        font-family:OCR A Std, monospace;
+    }
+    
+    html,
+    body{
+       
+       display:flex;
+       flex-direction:row;
+       
+       
+    }
+
+    .content-side{
+        border:1px solid red;
+        width:100%;
+        min-width:500px;
+        
+    }
+        
+    
+    
+    
+    
 }
